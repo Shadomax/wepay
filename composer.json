@@ -1,0 +1,31 @@
+{
+    "name": "erss400/wepay",
+    "description": "Wepay Wrapper for Laravel 5",
+    "type": "library",
+    "require": {
+        "wepay/php-sdk": "^0.3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mbiarrambang Alain",
+            "email": "cosmasalain@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Erss400\\Wepay\\": "src/"
+        }
+    },
+    "extra": { 
+        "laravel": { 
+            "providers": [ 
+                "Erss400\\Wepay\\WepayServiceProvider" 
+            ], 
+            "aliases": { 
+                "Wepay": "Erss400\\Wepay\\WepayFacade" 
+            } 
+        } 
+    },
+    "minimum-stability": "stable"
+}
